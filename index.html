@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Hoja de vida de Santiago Prieto Castellanos, Analista de Marca CNS en Abbott EPD.">
+<meta name="robots" content="noindex">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Santiago Prieto Castellanos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: navy header band with name and contact; below, a classic two-column résumé — profile sidebar (sticky on desktop) and main content; one column on phones */
+:root{
+  --bg:#F4F6F9; --surface:#FFFFFF; --ink:#1B2433; --muted:#5B6575; --line:#E1E5EB;
+  --brand:#14325C; --brand-ink:#FFFFFF; --brand-muted:#B9C6DA; --accent:#1F5FAD; --accent-soft:#E8F0FA;
+  --font:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F141B; --surface:#161D27; --ink:#E4E8EE; --muted:#9AA4B3; --line:#263040;
+  --brand:#14233A; --brand-ink:#F1F4F8; --brand-muted:#9FB0C8; --accent:#7FB0EC; --accent-soft:#1A2A40; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F141B; --surface:#161D27; --ink:#E4E8EE; --muted:#9AA4B3; --line:#263040;
+  --brand:#14233A; --brand-ink:#F1F4F8; --brand-muted:#9FB0C8; --accent:#7FB0EC; --accent-soft:#1A2A40; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15.5px;line-height:1.6;font-variant-numeric:tabular-nums}
+a{color:var(--accent);text-underline-offset:2px}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* header band */
+.band{background:var(--brand);color:var(--brand-ink)}
+.band .wrap{padding-block:36px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+.mono{width:76px;height:76px;border-radius:50%;border:2px solid var(--brand-muted);display:grid;place-items:center;font-weight:600;font-size:26px;letter-spacing:.02em}
+.band h1{margin:0;font-size:clamp(26px,3.6vw,36px);font-weight:600;line-height:1.15;letter-spacing:-.01em;text-wrap:balance}
+.band .role{margin:6px 0 0;color:var(--brand-muted);font-size:16px}
+.band .meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:14px;color:var(--brand-muted)}
+.lang{display:flex;border:1px solid var(--brand-muted);border-radius:4px;overflow:hidden;align-self:start}
+.lang button{border:0;background:none;padding:5px 12px;font-size:13px;font-weight:500;color:var(--brand-muted)}
+.lang button[aria-pressed="true"]{background:var(--brand-ink);color:var(--brand)}
+@media (max-width:640px){.band .wrap{grid-template-columns:auto 1fr}.lang{grid-column:1/-1;justify-self:start;grid-row:1}.mono{width:56px;height:56px;font-size:20px}}
+
+/* layout */
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;padding-block:28px 48px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+aside{display:grid;gap:16px;position:sticky;top:16px}
+@media (max-width:880px){aside{position:static}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
+.panel h3{margin:0 0 12px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+main{display:grid;gap:16px;min-width:0}
+main .panel{padding:24px 28px}
+@media (max-width:560px){main .panel{padding:20px}}
+h2{margin:0 0 16px;font-size:20px;font-weight:600;padding-bottom:10px;border-bottom:1px solid var(--line)}
+
+/* contact */
+.contact{display:grid;gap:10px}
+.crow{display:grid;grid-template-columns:20px 1fr auto;gap:10px;align-items:center;font-size:14px;min-width:0}
+.crow svg{width:18px;height:18px;stroke:var(--muted);fill:none;stroke-width:1.8}
+.crow span{overflow-wrap:anywhere}
+.copy{border:1px solid var(--line);background:none;border-radius:4px;padding:2px 8px;font-size:12px;color:var(--muted)}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+
+/* skills */
+.meter{display:grid;gap:12px}
+.m-row{display:grid;grid-template-columns:1fr auto;gap:5px 10px;font-size:14px}
+.m-row small{color:var(--muted);font-size:12.5px}
+.bar{grid-column:1/-1;height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.list li{display:flex;justify-content:space-between;gap:10px}
+.list li span{color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:13px;border:1px solid var(--line);border-radius:4px;padding:3px 9px;background:var(--bg)}
+
+/* profile */
+.lead{margin:0;max-width:72ch}
+
+/* experience */
+.job{border-top:1px solid var(--line);padding-block:18px}
+.job:first-of-type{border-top:0;padding-top:0}
+.jh{display:grid;grid-template-columns:1fr auto;gap:2px 16px;width:100%;text-align:left;background:none;border:0;padding:0}
+.jh .t{font-weight:600;font-size:17px}
+.jh .d{color:var(--muted);font-size:14px;white-space:nowrap}
+.jh .o{color:var(--accent);font-weight:500;font-size:15px}
+.jh .tg{grid-row:1/3;grid-column:3;align-self:center;width:26px;height:26px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center}
+.jh .tg svg{width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;transition:transform .2s}
+.jh[aria-expanded="true"] .tg svg{transform:rotate(180deg)}
+.jh{grid-template-columns:1fr auto auto}
+@media (max-width:560px){.jh{grid-template-columns:1fr auto}.jh .d{grid-column:1;grid-row:3;white-space:normal}.jh .tg{grid-column:2;grid-row:1/4}}
+.badge{display:inline-block;margin-left:8px;font-size:11.5px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:1px 7px;vertical-align:2px}
+.jb{margin-top:12px}
+.jb ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.jb li::marker{color:var(--muted)}
+.sub{margin:18px 0 8px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.reports{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.rep{padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.rep b{display:block;font-size:14px;font-weight:600}
+.rep span{font-size:13px;color:var(--muted)}
+.brands{display:flex;flex-wrap:wrap;gap:6px}
+.brands span{font-size:13.5px;font-weight:500;border:1px solid var(--line);border-radius:4px;padding:4px 10px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* thesis & projects */
+.thesis{border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin-bottom:18px}
+.thesis small{color:var(--muted);font-size:13px;font-weight:500}
+.thesis p.tt{margin:4px 0 6px;font-weight:600;font-size:16.5px;line-height:1.4;text-wrap:balance}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 24px;margin:0;padding:0;list-style:none}
+.proj li{font-size:14.5px}
+.proj b{display:block;font-weight:600}
+.proj span{color:var(--muted)}
+.edu{display:grid;gap:14px}
+.edu div{display:grid;grid-template-columns:1fr auto;gap:0 16px}
+.edu b{font-weight:600}
+.edu span{color:var(--muted);font-size:14px}
+.edu .d{color:var(--muted);font-size:14px;grid-row:1}
+footer{padding-block:20px 32px;color:var(--muted);font-size:13px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);opacity:0;background:var(--ink);color:var(--surface);padding:9px 16px;border-radius:4px;font-size:14px;transition:.2s;pointer-events:none;z-index:20}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <div class="mono" aria-hidden="true">SP</div>
+    <div>
+      <h1>Santiago Prieto Castellanos</h1>
+      <p class="role" data-i="role"></p>
+      <div class="meta"><span>Abbott EPD</span><span>Bogotá, Colombia</span></div>
+    </div>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button id="lang-es" data-l="es" aria-pressed="true">ES</button>
+      <button id="lang-en" data-l="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <aside>
+    <div class="panel">
+      <h3 data-i="h_contact"></h3>
+      <div class="contact">
+        <div class="crow"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>sa.prieto@javeriana.edu.co</span><button class="copy" data-copy="sa.prieto@javeriana.edu.co" data-i="copy"></button></div>
+        <div class="crow"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+57 315 671 6572</span><button class="copy" data-copy="+57 315 671 6572" data-i="copy"></button></div>
+        <div class="crow"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/santiago-prieto-castellanos-233b99262" target="_blank" rel="noopener">LinkedIn</a><span></span></div>
+        <div class="crow"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Bogotá, Colombia</span><span></span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3 data-i="h_tools"></h3>
+      <div class="meter" id="meters"></div>
+    </div>
+    <div class="panel">
+      <h3 data-i="h_sources"></h3>
+      <div class="pills"><span class="pill">IQVIA</span><span class="pill">SISMED</span><span class="pill">CloseUp</span></div>
+    </div>
+    <div class="panel">
+      <h3 data-i="h_lang"></h3>
+      <ul class="list"><li><b data-i="es"></b><span data-i="native"></span></li><li><b data-i="en"></b><span>B2</span></li></ul>
+    </div>
+    <div class="panel">
+      <h3 data-i="h_soft"></h3>
+      <div class="pills" id="soft"></div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="panel" id="perfil">
+      <h2 data-i="h_profile"></h2>
+      <p class="lead" data-i="summary"></p>
+    </section>
+
+    <section class="panel" id="experiencia">
+      <h2 data-i="h_exp"></h2>
+      <div id="jobs"></div>
+    </section>
+
+    <section class="panel" id="formacion">
+      <h2 data-i="h_edu"></h2>
+      <div class="edu">
+        <div><b><span data-i="edu3"></span><span class="badge" data-i="ongoing"></span></b><span class="d" data-i="edu3d"></span><span data-i="edu3s"></span></div>
+        <div><b data-i="edu4"></b><span class="d" data-i="edu4d"></span><span>Universidad de los Andes · <span data-i="exec"></span> · <a href="https://wallet.xertify.co/certificates/6E67F343A002" target="_blank" rel="noopener" data-i="verify"></a></span></div>
+        <div><b data-i="edu1"></b><span class="d">2022 – 2025</span><span>Pontificia Universidad Javeriana</span></div>
+        <div><b data-i="edu2"></b><span class="d">2021</span><span>Colegio Anglo Americano</span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="proyectos">
+      <h2 data-i="h_proj"></h2>
+      <div class="thesis">
+        <small data-i="thesis_l"></small>
+        <p class="tt" data-i="thesis_t"></p>
+        <a href="https://repository.javeriana.edu.co/items/ff2a3a26-7165-4a5f-809f-5e057157ae4c" target="_blank" rel="noopener" data-i="thesis_a"></a>
+      </div>
+      <ul class="proj" id="projects"></ul>
+    </section>
+  </main>
+</div>
+
+<footer class="wrap" data-i="foot"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const T={
+es:{role:"Analista de Marca · Portafolio Sistema Nervioso Central (CNS)",
+h_contact:"Contacto",copy:"Copiar",h_tools:"Herramientas",h_sources:"Fuentes de datos de mercado",h_lang:"Idiomas",es:"Español",en:"Inglés",native:"Nativo",h_soft:"Competencias",
+h_profile:"Perfil profesional",
+summary:"Administrador de Empresas de la Pontificia Universidad Javeriana, con experiencia en mercadeo farmacéutico en Abbott EPD. Apoyo de forma transversal a los Gerentes de Producto del portafolio de Sistema Nervioso Central con reportes de mercado, ventas, sell-in / sell-out, inventario en canal, recetas y proyecciones, a partir de IQVIA, SISMED y CloseUp. Diplomado en Marketing Farmacéutico (Universidad de los Andes) y actualmente cursando la Especialización en Marketing Estratégico en la Javeriana. Busco aportar análisis claro y oportuno para la toma de decisiones de marca y de la fuerza de ventas.",
+h_exp:"Experiencia profesional",now:"Actual",reports:"Reportes que elaboro",portfolio:"Portafolio CNS que apoyo",
+h_edu:"Formación académica",edu1:"Administración de Empresas",edu2:"Bachiller",
+edu3:"Especialización en Marketing Estratégico",ongoing:"En curso",edu3d:"Jul 2026 – Actualidad",edu3s:"Pontificia Universidad Javeriana",edu4d:"Mar 2026 – Ago 2026",
+edu4:"Diplomado en Marketing Farmacéutico",exec:"Educación Ejecutiva",verify:"Verificar certificado ↗",
+h_proj:"Trabajo de grado y proyectos",thesis_l:"Trabajo de grado · Proyecto Líder Consultoría",
+thesis_t:"Plan de mercadeo para productos respiratorios pediátricos dirigidos a pacientes con secuelas respiratorias post-COVID en Colombia",
+thesis_a:"Ver en el Repositorio Institucional Javeriano ↗",
+foot:"Santiago Prieto Castellanos · Actualizado en octubre de 2026",copied:"Copiado",
+lvl:{100:"Avanzado",75:"Intermedio-avanzado"}},
+en:{role:"Brand Analyst · Central Nervous System (CNS) Portfolio",
+h_contact:"Contact",copy:"Copy",h_tools:"Tools",h_sources:"Market data sources",h_lang:"Languages",es:"Spanish",en:"English",native:"Native",h_soft:"Core skills",
+h_profile:"Professional summary",
+summary:"Business Administration graduate from Pontificia Universidad Javeriana with pharmaceutical marketing experience at Abbott EPD. I support all Product Managers in the Central Nervous System portfolio with market, sales, sell-in / sell-out, channel inventory, prescription and forecast reporting, using IQVIA, SISMED and CloseUp. Pharmaceutical Marketing Diploma (Universidad de los Andes), currently pursuing a Graduate Specialization in Strategic Marketing at Javeriana. I aim to deliver clear, timely analysis for brand and sales-force decisions.",
+h_exp:"Professional experience",now:"Current",reports:"Reports I prepare",portfolio:"CNS portfolio I support",
+h_edu:"Education",edu1:"Business Administration",edu2:"High school diploma",
+edu3:"Graduate Specialization in Strategic Marketing",ongoing:"In progress",edu3d:"Jul 2026 – Present",edu3s:"Pontificia Universidad Javeriana",edu4d:"Mar 2026 – Aug 2026",
+edu4:"Pharmaceutical Marketing Diploma",exec:"Executive Education",verify:"Verify certificate ↗",
+h_proj:"Thesis and projects",thesis_l:"Thesis · Líder Consultoría project",
+thesis_t:"Marketing plan for pediatric respiratory products aimed at patients with post-COVID respiratory sequelae in Colombia",
+thesis_a:"View in the Javeriana Institutional Repository ↗",
+foot:"Santiago Prieto Castellanos · Updated October 2026",copied:"Copied",
+lvl:{100:"Advanced",75:"Upper-intermediate"}}};
+
+const REPORTS=[
+ {b:{es:"Mercado",en:"Market"},s:"IQVIA · SISMED"},
+ {b:{es:"Ventas",en:"Sales"},s:{es:"Sell-in y sell-out",en:"Sell-in and sell-out"}},
+ {b:"SIT",s:{es:"Inventario en canal",en:"Stock in trade"}},
+ {b:{es:"Clientes",en:"Customers"},s:{es:"Desempeño por cliente",en:"Performance by account"}},
+ {b:{es:"Recetas (Rx)",en:"Prescriptions (Rx)"},s:"CloseUp"},
+ {b:"HCPs",s:{es:"Médicos prescriptores",en:"Prescribing physicians"}},
+ {b:{es:"Pacientes",en:"Patients"},s:{es:"Seguimiento de pacientes",en:"Patient tracking"}},
+ {b:{es:"Proyecciones",en:"Forecasts"},s:{es:"Proyección de ventas",en:"Sales forecasting"}}];
+const BRANDS=["Valcote","Samexid","Luvox","Depakene","Attentho"];
+
+const JOBS=[
+{id:"j1",current:true,org:"Abbott EPD",d:{es:"Feb 2026 – Actualidad",en:"Feb 2026 – Present"},t:{es:"Analista de Marca CNS",en:"CNS Brand Analyst"},
+ items:{es:["Apoyo transversal a todos los Gerentes de Producto del portafolio de Sistema Nervioso Central.",
+  "Elaboración de reportes de mercado y ventas con IQVIA y SISMED.",
+  "Análisis de sell-in, sell-out, inventario en canal (SIT) y desempeño por cliente.",
+  "Seguimiento de recetas (Rx), médicos prescriptores (HCPs) y pacientes.",
+  "Proyecciones de ventas y apoyo en el desarrollo de los planes de marketing.",
+  "Seguimiento de actividades clave de la fuerza de ventas y gerentes de distrito."],
+ en:["Cross-functional support to all Product Managers in the Central Nervous System portfolio.",
+  "Prepare market and sales reports using IQVIA and SISMED.",
+  "Analyze sell-in, sell-out, stock in trade (SIT) and account performance.",
+  "Track prescriptions (Rx), prescribing physicians (HCPs) and patients.",
+  "Build sales forecasts and support the development of marketing plans.",
+  "Monitor key activities of the sales force and district managers."]},extra:true},
+{id:"j2",org:"Abbott EPD",d:{es:"Jul 2025 – Ene 2026",en:"Jul 2025 – Jan 2026"},t:{es:"Practicante de Mercadeo",en:"Marketing Intern"},
+ items:{es:["Gestión y seguimiento de contratos y patrocinios.","Apoyo operativo y administrativo a gerentes y fuerza de ventas.","Gestión de material promocional: coordinación, envíos e inventarios.","Análisis de mercado y precios."],
+ en:["Managed and tracked contracts and sponsorships.","Provided operational and administrative support to managers and the sales force.","Managed promotional material: coordination, shipping and inventory.","Market and pricing analysis."]}},
+{id:"j3",org:"Prosarc S.A.",d:{es:"Dic 2024 – Ene 2025",en:"Dec 2024 – Jan 2025"},t:{es:"Auxiliar Administrativo",en:"Administrative Assistant"},
+ items:{es:["Procesos contables y administrativos: facturación electrónica, órdenes de compra y nómina.","Solicitud y administración de certificados de retención para clientes y proveedores, con cumplimiento normativo."],
+ en:["Accounting and administrative processes: e-invoicing, purchase orders and payroll.","Requested and managed tax withholding certificates for clients and suppliers in line with regulations."]}}];
+
+const TOOLS=[{n:"Excel",l:100},{n:"PowerPoint",l:100},{n:"Power BI",l:75}];
+const SOFT={es:["Pensamiento analítico","Trabajo en equipo","Comunicación","Liderazgo","Adaptabilidad","Resolución de problemas"],
+en:["Analytical thinking","Teamwork","Communication","Leadership","Adaptability","Problem solving"]};
+const PROJ=[
+ {t:{es:"Análisis financiero",en:"Financial analysis"},s:"Avianca, Almacenes Éxito"},
+ {t:{es:"Análisis estratégico",en:"Strategic analysis"},s:"Flexor S.A.S"},
+ {t:{es:"Investigación de mercados",en:"Market research"},s:"Juan Valdez, San Jorge"},
+ {t:{es:"Campamento de Liderazgo ECO 1",en:"ECO 1 Leadership Camp"},s:{es:"Junio 2024",en:"June 2024"}},
+ {t:{es:"Festivales deportivos",en:"Sports festivals"},s:"2022 – 2024"}];
+
+let lang="es",open={j1:true};
+try{lang=localStorage.getItem("cv-lang")||"es"}catch(e){}
+const v=x=>typeof x==="string"?x:x[lang];
+const tg='<span class="tg" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>';
+
+function render(){
+  const t=T[lang];document.documentElement.lang=lang;
+  document.querySelectorAll("[data-i]").forEach(el=>{const s=t[el.dataset.i];if(typeof s==="string")el.textContent=s});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===lang));
+  document.getElementById("jobs").innerHTML=JOBS.map(j=>{const o=!!open[j.id];return `
+   <article class="job">
+    <button class="jh" data-j="${j.id}" aria-expanded="${o}" aria-controls="b-${j.id}">
+      <span class="t">${j.t[lang]}${j.current?`<span class="badge">${t.now}</span>`:""}</span>
+      <span class="d">${j.d[lang]}</span>${tg}
+      <span class="o">${j.org}</span>
+    </button>
+    <div class="jb" id="b-${j.id}" ${o?"":"hidden"}>
+      <ul>${j.items[lang].map(i=>`<li>${i}</li>`).join("")}</ul>
+      ${j.extra?`<p class="sub">${t.portfolio}</p><div class="brands">${BRANDS.map(b=>`<span>${b}</span>`).join("")}</div>
+      <p class="sub">${t.reports}</p><div class="reports">${REPORTS.map(r=>`<div class="rep"><b>${v(r.b)}</b><span>${v(r.s)}</span></div>`).join("")}</div>`:""}
+    </div>
+   </article>`}).join("");
+  document.getElementById("meters").innerHTML=TOOLS.map(x=>`<div class="m-row"><span>${x.n}</span><small>${t.lvl[x.l]}</small><div class="bar" role="img" aria-label="${x.n}: ${t.lvl[x.l]}"><i style="width:${x.l}%"></i></div></div>`).join("");
+  document.getElementById("soft").innerHTML=SOFT[lang].map(s=>`<span class="pill">${s}</span>`).join("");
+  document.getElementById("projects").innerHTML=PROJ.map(p=>`<li><b>${v(p.t)}</b><span>${v(p.s)}</span></li>`).join("");
+}
+document.addEventListener("click",e=>{
+  const l=e.target.closest(".lang button");
+  if(l){lang=l.dataset.l;try{localStorage.setItem("cv-lang",lang)}catch(_){}render();return}
+  const j=e.target.closest("[data-j]");
+  if(j){open[j.dataset.j]=j.getAttribute("aria-expanded")!=="true";render();document.querySelector(`[data-j="${j.dataset.j}"]`).focus();return}
+  const c=e.target.closest("[data-copy]");
+  if(c){const txt=c.dataset.copy;try{navigator.clipboard.writeText(txt).then(()=>toast(T[lang].copied+": "+txt),()=>toast(txt))}catch(_){toast(txt)}}
+});
+let tt;function toast(m){const el=document.getElementById("toast");el.textContent=m;el.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("show"),2000)}
+render();
+</script>
+</body>
+</html>
